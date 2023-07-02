@@ -1,0 +1,105 @@
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+#quoteDiv{
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+}
+
+[data-bs-theme="beach"] {
+  $primary: $green-500;
+  --bs-body-color: var(--bs-white);
+  --bs-secondary-color: #000;
+  
+  .form-select {
+    --bs-body-color: var(--bs-secondary-color);
+  }
+    
+  .blockquote-footer{
+    color: $primary;
+  }
+
+  .btn-primary {
+    --bs-btn-bg: #{mix($gray-600, $primary, .5)};
+    --bs-btn-border-color: #{rgba($green, .25)};
+    --bs-btn-hover-bg: #{darken(mix($gray-600, $primary, .5), 5%)};
+    --bs-btn-hover-border-color: #{rgba($green, .25)};
+    --bs-btn-active-bg: #{darken(mix($gray-600, $primary, .5), 10%)};
+    --bs-btn-active-border-color: #{rgba($primary, .5)};
+    --bs-btn-focus-border-color: #{rgba($primary, .5)};
+  }
+}
+
+[data-bs-theme="clouds"] {
+  $primary: $blue-500;
+  --bs-body-color: var(--bs-white);
+  --bs-secondary-color: #000;
+
+  .form-select {
+    --bs-body-color: var(--bs-secondary-color);
+  }
+
+  .blockquote-footer{
+    color:  $primary;
+  }
+
+  .btn-primary {
+    --bs-btn-bg: #{mix($gray-600, $primary, .5)};
+    --bs-btn-border-color: #{rgba($primary, .25)};
+    --bs-btn-hover-bg: #{darken(mix($gray-600, $primary, .5), 5%)};
+    --bs-btn-hover-border-color: #{rgba($blue, .25)};
+    --bs-btn-active-bg: #{darken(mix($gray-600, $primary, .5), 10%)};
+    --bs-btn-active-border-color: #{rgba($primary, .5)};
+    --bs-btn-focus-border-color: #{rgba($primary, .5)};
+  }
+}
+
+[data-bs-theme="mountains"] {
+  $primary: $yellow-400;
+  --bs-secondary-color: #000;
+
+  .blockquote-footer{
+    color:  $primary;
+  }
+  
+  .btn-primary {
+    --bs-btn-color: var(--bs-secondary-color);
+    --bs-btn-bg: #{mix($gray-700, $primary, .5)};
+    --bs-btn-border-color: #{rgba($primary, .25)};
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #{darken(mix($gray-700, $primary, .5), 5%)};
+    --bs-btn-hover-border-color: #{rgba($primary, .25)};
+    --bs-btn-active-bg: #{darken(mix($gray-600, $primary, .5), 10%)};
+    --bs-btn-active-border-color: #{rgba($primary, .5)};
+    --bs-btn-focus-border-color: #{rgba($primary, .5)};
+  }
+}
+
+[data-bs-theme="sunset"] {
+  $primary: $orange-600;
+  --bs-secondary-color: #000;
+
+  .blockquote-footer{
+    color:  $primary;
+  }
+  
+  .form-select {
+      --bs-body-color: var(--bs-secondary-color);
+  }
+
+  .btn-primary {
+    --bs-btn-bg: #{mix($gray-600, $primary, .5)};
+    --bs-btn-border-color: #{rgba($primary, .25)};
+    --bs-btn-hover-bg: #{darken(mix($gray-600, $primary, .5), 5%)};
+    --bs-btn-hover-border-color: #{rgba($primary, .25)};
+    --bs-btn-active-bg: #{darken(mix($gray-600, $primary, .5), 10%)};
+    --bs-btn-active-border-color: #{rgba($primary, .5)};
+    --bs-btn-focus-border-color: #{rgba($primary, .5)};
+  }
+
+}
+
