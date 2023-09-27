@@ -73,7 +73,7 @@ function generateQuote(quoteObj){
     $("#quoteDiv").html(html)
 }
 function makeCategoriesDdl(catArr){
-    var html = `<label class="w-auto text-end">Choose a category:</label><select id="ddlCategories" class="form-select form-select-sm w-auto">
+    var html = `<label class="w-auto text-end">Choose a category:</label><select id="ddlCategories" class="ms-3 form-select form-select-sm w-auto">
     <option value="random">random</option>`
 
     for(let i = 0; i<catArr.length; i++){
@@ -83,7 +83,7 @@ function makeCategoriesDdl(catArr){
     $("#catDdl").html(html)
 }
 function makeBackgroundDdl(bgArr){
-    var html = `<label class="w-auto text-end">Change background:</label><select id="ddlBg" class="form-select form-select-sm w-auto">`
+    var html = `<label class="w-auto text-end">Change background:</label><select id="ddlBg" class="ms-3 form-select form-select-sm w-auto">`
 
     for(let i = 0; i<bgArr.length; i++){
         html += `<option value="${bgArr[i].path}">${bgArr[i].name}</option>`

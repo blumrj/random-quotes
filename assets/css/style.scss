@@ -1,7 +1,4 @@
 
-
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
 #quoteDiv{
   background: rgba(255, 255, 255, 0.28);
   border-radius: 16px;
@@ -32,6 +29,10 @@
     --bs-btn-active-border-color: #{rgba($primary, .5)};
     --bs-btn-focus-border-color: #{rgba($primary, .5)};
   }
+
+  #videoBackground{
+    background-color: #344e41;
+  }
 }
 
 [data-bs-theme="clouds"] {
@@ -56,6 +57,10 @@
     --bs-btn-active-border-color: #{rgba($primary, .5)};
     --bs-btn-focus-border-color: #{rgba($primary, .5)};
   }
+
+  #videoBackground{
+    background-color: #0077b6;
+  }
 }
 
 [data-bs-theme="mountains"] {
@@ -76,6 +81,10 @@
     --bs-btn-active-bg: #{darken(mix($gray-600, $primary, .5), 10%)};
     --bs-btn-active-border-color: #{rgba($primary, .5)};
     --bs-btn-focus-border-color: #{rgba($primary, .5)};
+  }
+
+  #videoBackground{
+    background-color: #a3b18a;
   }
 }
 
@@ -99,6 +108,10 @@
     --bs-btn-active-bg: #{darken(mix($gray-600, $primary, .5), 10%)};
     --bs-btn-active-border-color: #{rgba($primary, .5)};
     --bs-btn-focus-border-color: #{rgba($primary, .5)};
+  }
+
+  #videoBackground{
+    background-color: #f4a261;
   }
 
 }
